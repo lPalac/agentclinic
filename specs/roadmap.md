@@ -6,8 +6,9 @@ High-level implementation order. Each phase is small, ships something demoable a
 - Replace the placeholder `src/index.ts` with a Next.js (App Router) + TypeScript app.
 - Add Tailwind CSS and initialize shadcn/ui.
 - Build an app shell with a header ("AgentClinic"), side navigation and a footer with a tagline.
-- Wire SQLite with Drizzle: an empty schema, a migration script and the `db:reset` and `db:seed` scripts.
-- Add one passing Vitest test and one Playwright smoke test that checks the home page loads.
+- Wire SQLite with Drizzle, including a seeded `clinic_info` table and the database scripts.
+- Build a minimal, informational home page introducing AgentClinic and displaying the seeded clinic information.
+- Add one passing Vitest test and one Playwright smoke test that checks the home page and seeded clinic information.
 
 ## Phase 1: Agents (patients)
 - Create an `agents` table with name, model, "employer" (their human) and intake date.
